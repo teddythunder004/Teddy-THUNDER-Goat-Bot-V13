@@ -99,7 +99,7 @@ module.exports = {
 
       if (!np) {
 
-        return api.sendMessage('💬 Salut! Moi c'est PAIN TENDO une Intelligence Artificielle créer par Shibai Otsutsuki mon maître comment puis-je vous aider aujourd'hui ?.', event.threadID, event.messageID);
+        return api.sendMessage('💬 Salut! Moi c'est SHIBAI BOT une Intelligence Artificielle créer par Shibai Otsutsuki mon maître comment puis-je vous aider aujourd'hui ?.', event.threadID, event.messageID);
 
       }
 
@@ -131,7 +131,7 @@ module.exports = {
 
             role: "user",
 
-            content: `💬 Salut! Moi c'est PAIN TENDO une Intelligence Artificielle créer Shibai Otsutsuki mon maître comment puis-je vous aider aujourd'hui ?`
+            content: `💬 Salut! Moi c'est SHIBAI BOT une Intelligence Artificielle créer Shibai Otsutsuki mon maître comment puis-je vous aider aujourd'hui ?`
 
           },
 
