@@ -47,7 +47,7 @@ module.exports = {
 			saturday: "Saturday",
 			sunday: "Sunday",
 			alreadyReceived: "You have already received the gift",
-			received: "You have received %1 coin and %2 exp"
+			received: "Le grand Shibai Otsutsuki te donne %1 franc CFA et %2 exp"
 		}
 	},
 
