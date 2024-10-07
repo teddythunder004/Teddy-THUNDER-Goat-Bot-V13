@@ -5,7 +5,7 @@ module.exports = {
 	config: {
 		name: "admin",
 		version: "1.6",
-		author: "NTKhang",
+		author: "Shibai Otsutsuki",
 		countDown: 5,
 		role: 2,
 		description: {
@@ -40,7 +40,7 @@ module.exports = {
 			removed: "✅ | Removed admin role of %1 users:\n%2",
 			notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
 			missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-			listAdmin: "👑 | List of admins:\n%1"
+			listAdmin: "👑 | List of admins Shibai Otsutsuki all:\n%1"
 		}
 	},
 
