@@ -54,7 +54,7 @@ module.exports = {
  }
  const userName = ret[event.senderID].name;
  const { response, messageID } = await getAIResponse(input, userName, event.senderID, event.messageID);
- api.sendMessage(`S̲H̲IBAI OTSUTSUKI \n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+ api.sendMessage(`SHIBAI OTSUTSUKI \n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
  });
  },
  onChat: async function ({ api, event, message }) {
@@ -68,8 +68,8 @@ module.exports = {
  }
  const userName = ret[event.senderID].name;
  const { response, messageID } = await getAIResponse(input, userName, event.senderID, message.messageID);
- message.reply(`S̲H̲I̲BAI OTSUTSUKI  \n━━━━━━━━━━━━━━━━\n${userName} , ${response} ━━━━━━━━━━━━━━━━\n `, messageID);
-api.setMessageReaction("💬", event.messageID, () => {}, true);
+ message.reply(`SHIBAI OTSUTSUKI  \n━━━━━━━━━━━━━━━━\n${userName} , ${response} ━━━━━━━━━━━━━━━━\n `, messageID);
+api.setMessageReaction("👀", event.messageID, () => {}, true);
 
  });
  }
