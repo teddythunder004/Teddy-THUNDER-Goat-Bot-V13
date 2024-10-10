@@ -34,7 +34,7 @@ async function getAIResponse(input, userName, userId, messageID) {
 module.exports = {
  config: {
  name: 'ai',
- author: 'shizuka',
+ author: 'Shibai Otsutsuki',
  role: 0,
  aliase: ["ai"],
  category: 'ai-chat',
@@ -68,7 +68,7 @@ module.exports = {
  }
  const userName = ret[event.senderID].name;
  const { response, messageID } = await getAIResponse(input, userName, event.senderID, message.messageID);
- message.reply(`SHIBAI OTSUTSUKI  \n━━━━━━━━━━━━━━━━\n${userName} , ${response} ━━━━━━━━━━━━━━━━ Another Me 🙃\n `, messageID);
+ message.reply(`👨‍💻 SHIBAI OTSUTSUKI 👨‍💻 \n━━━━━━━━━━━━━━━━\n${userName} , ${response} ━━━━━━━━━━━━━━━━ Another Me 🙃\n `, messageID);
 api.setMessageReaction("👀", event.messageID, () => {}, true);
 
  });
