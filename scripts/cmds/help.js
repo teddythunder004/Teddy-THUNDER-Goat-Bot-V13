@@ -3,13 +3,13 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ SHIBAI OTSUTSUKI  ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "[ MESSIE OSANGO ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
     name: "help",
     version: "1.17",
-    author: "Shibai Otsutsuki", // original author Kshitiz 
+    author: "MESSIE OSANGO", // original author Kshitiz 
     countDown: 10,
     role: 0,
     shortDescription: {
