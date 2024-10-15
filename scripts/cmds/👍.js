@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "👍") return message.reply("Shibai Otsutsuki es trop intelligent 😇 ");
+	if (event.body && event.body.toLowerCase() == "👍") return message.reply("J'ESPÈRE QUE VOUS ÊTES SATISFÉS DE MES SERVICES !");
 }
 };
