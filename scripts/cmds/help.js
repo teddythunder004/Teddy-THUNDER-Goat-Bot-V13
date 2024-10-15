@@ -1,4 +1,4 @@
-const fs = require("fs-extra");
+€cmd install help.js const fs = require("fs-extra");
 const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
@@ -9,7 +9,7 @@ module.exports = {
   config: {
     name: "help",
     version: "1.17",
-    author: "NTKhang", // original author Kshitiz 
+    author: "Shibai Otsutsuki", // original author Kshitiz 
     countDown: 10,
     role: 0,
     shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔═══════════╗\n✰ SHIBAI OTSUTSUKI ✰\n╚═══════════╝`; // replace with your name 
+      msg += `╔═══════════╗\n✰ MESSIE OSANGO ✰\n╚═══════════╝`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -50,7 +50,7 @@ module.exports = {
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `👨‍💻${item}`);
+            const cmds = names.slice(i, i + 3).map((item) => `⚡${item}`);
             msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
@@ -59,8 +59,10 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\SHIBAI OTSUTSUKI fb: https://www.facebook.com/profile.php?id=61561751986955\n`;
-      msg += ` | SHIBAI OTSUTSUKI`; // Voici la liste de mes cmds.
+      msg += `\ CONTACT MESSIE OSANGO PAGE
+  FACEBOOK: 
+  https://www.facebook.com/profile.php?id=61564382117276 \n`;
+      msg += ` | MESSIE OSANGO |`; // Voici la liste de mes cmds.
 
       await message.reply(msg);
     } else {
