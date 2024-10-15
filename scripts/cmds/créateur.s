@@ -15,9 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "qui es ton créateur") return message.reply("☆𝙎𝘼𝙏𝑂𝑅𝑈 𝔤𝔬𝔧𝔬  𝐵𝑂𝑇
-━━━━━━━━━━━━━━━━
-J'AI ÉTÉ CRÉÉ PAR MESSIE OSANGO AVEC L'AIDE DE SHIBAÏ OTSUTSUKI  !
-━━━━━━━━━━━━━━━━");
+	if (event.body && event.body.toLowerCase() == "qui es ton créateur") return message.reply("j'ai été créé par MESSIE OSANGO avec l'aide de shibaï");
 }
 };
