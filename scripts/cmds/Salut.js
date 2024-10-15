@@ -2,7 +2,7 @@ module.exports = {
 	config: {
 			name: "salut",
 			version: "1.0",
-			author: "Shibai Otsutsuki",
+			author: "Messie osango",
 			countDown: 5,
 			role: 0,
 			shortDescription: "sarcasm",
