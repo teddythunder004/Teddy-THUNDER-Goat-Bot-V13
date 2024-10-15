@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "salut") return message.reply("Salut humain! comment tu vas écrit #shibai pour que je t'ajoute dans mon groupe et n'oublie pas que Shibai Otsutsuki es le meilleur 😉");
+	if (event.body && event.body.toLowerCase() == "salut") return message.reply("SALUT QUE PUIS-JE FAIRE POUR TOI EN CETTE JOURNÉE MAGNIFIQUE ?");
 }
 };
