@@ -18,9 +18,7 @@ async function getAIResponse(input, userId, messageID) {
     { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
   ];
 
-  let response = "𝑆𝐴𝐿𝑈𝑇, 𝐽𝐸 𝑆𝑈𝐼𝑆 𝐿'𝐼𝑁𝑇𝐸𝐿𝐿𝐼𝐺𝐸𝑁𝐶𝐸 𝐴𝑅𝑇𝐼𝐹𝐼𝐶𝐼𝐸𝐿𝐿𝐸 𝐶𝑅É𝐸 𝑃𝐴𝑅 𝑀𝐸𝑆𝑆𝐼𝐸 𝑂𝑆𝐴𝑁𝐺𝑂 
-𝑄𝑈𝐸 𝑃𝑈𝐼𝑆-𝐽𝐸 𝐹𝐴𝐼𝑅𝐸 𝑃𝑂𝑈𝑅 𝑉𝑂𝑈𝑆 ?
-𝙋𝙊𝙎𝙀𝙕 𝙑𝙊𝙎 𝙌𝙐𝙀𝙎𝙏𝙄𝙊𝙉𝙎 𝙀𝙏 𝙅𝙀 𝙁𝙀𝙍𝘼𝙄 𝘿𝙀 𝙈𝙊𝙉 𝙈𝙄𝙀𝙐𝙓 𝙋𝙊𝙐𝙍 𝙔 𝙍𝙀𝙋𝙊𝙉𝘿𝙍𝙀 ! ";
+  let response = "𝑠𝑎𝑙𝑢𝑡,𝑗𝑒 𝑠𝑢𝑖𝑠 𝑙'𝑖𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑐𝑒 𝑎𝑟𝑡𝑖𝑓𝑖𝑐𝑖𝑒𝑙𝑙𝑒 𝐶𝑟é𝑒 𝔭𝔞𝔯 𝔪𝔢𝔰𝔰𝔦𝔢 𝔬𝔰𝔞𝔫𝔤𝔬 𝔮𝔲𝔢 𝔭𝔲𝔦𝔰-𝔧𝔢 𝔣𝔞𝔦𝔯𝔢 𝔭𝔬𝔲𝔯 𝔳𝔬𝔲𝔰 ? ";
   let currentIndex = 0;
 
   for (let i = 0; i < services.length; i++) {
@@ -47,12 +45,12 @@ module.exports = {
   onStart: async function ({ api, event, args }) {
     const input = args.join(' ').trim();
     if (!input) {
-      api.sendMessage(`SATAN II\n━━━━━━━━━━━━━━━━\nPlease provide a question or statement.\n━━━━━━━━━━━━━━━━`, event.threadID, event.messageID);
+      api.sendMessage(`SATORU GOJO\n━━━━━━━━━━━━━━━━\nPlease provide a question or statement.\n━━━━━━━━━━━━━━━━`, event.threadID, event.messageID);
       return;
     }
 
     const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-    api.sendMessage(`DIEU OTOTSUKI \n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+    api.sendMessage(`GOJO SATORU\n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
   },
   onChat: async function ({ event, message }) {
     const messageContent = event.body.trim().toLowerCase();
